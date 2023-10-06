@@ -1,0 +1,22 @@
+1 Composer for laravel setup
+https://getcomposer.org/download/
+
+2 Laragon for the laravel development enviroment
+https://laragon.org/download/index.html
+
+
+3 Breeze from Laravel Documentation for the Authentication Framework
+https://laravel.com/docs/10.x/starter-kits#breeze-and-blade
+
+4 Toaster Message Popup
+https://github.com/yoeunes/toastr --> for Laravel and Php
+
+example call the function and just use it
+toastr()->error('Oops! Something went wrong!') 
+
+https://github.com/CodeSeven/toastr --> for javascript , because some time we need 
+to use a non php file, so it is more efficient.
+example cal the function and just use it
+toastr.info('Are u sure?')
+
+
