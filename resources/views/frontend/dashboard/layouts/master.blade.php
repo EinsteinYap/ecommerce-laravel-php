@@ -24,6 +24,7 @@
 
   <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <!-- <link rel="stylesheet" href="css/rtl.css"> -->
 </head>
 
@@ -62,7 +63,7 @@
 
 
   <!--jquery library js-->
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
   <!--bootstrap js-->
   <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
   <!--font-awesome js-->
@@ -98,6 +99,14 @@
 
   <!--main/custom js-->
   <script src="{{ asset('frontend/js/main.js') }}"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+    @if($errors->any())
+            @foreach ($errors->all() as $error )
+            toastr.error("{{ $error }}")
+            @endforeach
+            @endif
+</script>
 </body>
 
 </html>
