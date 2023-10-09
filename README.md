@@ -1,4 +1,4 @@
-#This a Multi-Vendor Laravel PHP ecommerce project from student Yap Kah Yong
+#This a Multi-Vendor Laravel PHP ecommerce Wawasan Open University project from student  Yap Kah Yong (student ID:032190097)
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -9,6 +9,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p> -->
 
+
+## Laravel Ecommerce Application Copy Rights
+Copyright Notice
+Individual learning and research use are allowed, and secondary development is supported. Commercial use is permitted (for self-operation only).
+Commercial use only for Dr.Tan Wei Liang is allowed, but only for self-operation. If used for commercial purposes, copyright information must be retained. Please comply voluntarily.
+Redistribution or sale of the program code in any form or for any purpose is not allowed. Violators will be held legally responsible.
+The copyright information for third-party source code and binary files included in this project is separately marked.
+
+Copyright © 2019-2023 By EinsteinYap (https://einsteinyap.github.io/fbaw-my/) All rights reserved.
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
