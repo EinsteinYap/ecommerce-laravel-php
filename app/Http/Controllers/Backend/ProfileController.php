@@ -23,7 +23,7 @@ class ProfileController extends Controller
             'image' => ['image','max:2048']
         ]);
         $user =Auth::user();
-        
+
         if($request->hasFile('image'))
         {
             if(File::exists(public_path($user->image))){
@@ -35,11 +35,12 @@ class ProfileController extends Controller
             $path = "/uploads/".$imageName;
 
             $user->image =$path;
-        }   
-    
+        }
+
         $user->name =$request->name;
         $user->email = $request->email;
         $user->save();
+
         toastr()->success('Profile Updated Successfully');
         return redirect()->back();
     }

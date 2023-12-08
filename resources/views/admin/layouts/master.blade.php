@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="{{ asset('backend/assets/modules/weather-icon/css/weather-icons-wind.min.css') }}">
   <link rel="stylesheet" href="{{ asset('backend/assets/modules/summernote/summernote-bs4.css') }}">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('backend/assets/css/style.css') }}">
@@ -47,7 +49,7 @@
           Copyright &copy; 2023 <div class="bullet"></div> Design By <a href="https://einsteinyap.github.io/fbaw-my/">Einstein Yap</a>
         </div>
         <div class="footer-right">
-          
+
         </div>
       </footer>
     </div>
@@ -61,7 +63,7 @@
   <script src="{{ asset('backend/assets/modules/nicescroll/jquery.nicescroll.min.js')}}"></script>
   <script src="{{ asset('backend/assets/modules/moment.min.js')}}"></script>
   <script src="{{ asset('backend/assets/js/stisla.js')}}"></script>
-  
+
   <!-- JS Libraies -->
   <script src="{{ asset('backend/assets/modules/simple-weather/jquery.simpleWeather.min.js')}}"></script>
   <script src="{{ asset('backend/assets/modules/chart.min.js')}}"></script>
@@ -70,10 +72,12 @@
   <script src="{{ asset('backend/assets/modules/summernote/summernote-bs4.js')}}"></script>
   <script src="{{ asset('backend/assets/modules/chocolat/dist/js/jquery.chocolat.min.js')}}"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
 
   <!-- Page Specific JS File -->
   <script src="{{ asset('backend/assets/js/page/index-0.js')}}"></script>
-  
+
   <!-- Template JS File -->
   <script src="{{ asset('backend/assets/js/scripts.js')}}"></script>
   <script src="{{ asset('backend/assets/js/custom.js')}}"></script>
@@ -84,5 +88,6 @@
                   @endforeach
                   @endif
   </script>
+@stack('scripts')
 </body>
 </html>
