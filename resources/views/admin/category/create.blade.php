@@ -2,6 +2,7 @@
 
 @section('content')
  <!-- Main Content -->
+
     <section class="section">
       <div class="section-header">
         <h1>Catergory</h1>
@@ -22,20 +23,17 @@
 
               </div>
               <div class="card-body">
-                <form action="">
-                    <style>
-                        .btn-selected{
-                            background-color: red !important;
-                            border-color: red !important;
-                        }
-                    </style>
+                <form action="{{ route('admin.category.store') }}" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="">Icon</label>
                         <button class="btn btn-primary"
                         data-arrow-class="btn-success"
                         data-unselected-class="btn-info"
                         data-selected-class="btn-selected"
-                        role="iconpicker"></button>
+                        role="iconpicker"
+                        name="icon"
+                        ></button>
                     </div>
                     <div class="form-group">
                         <label for="">Name</label>
@@ -61,5 +59,11 @@
       </div>
     </section>
 
+    <style>
+        .btn-selected{
+            background-color: red !important;
+            border-color: red !important;
+        }
+    </style>
 @endsection
 
