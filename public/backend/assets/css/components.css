@@ -416,10 +416,11 @@ table.dataTable.no-footer {
   float: left;
 }
 
+/* below code cause double reload image */
 div.dataTables_wrapper div.dataTables_processing {
   font-size: 0 !important;
-  background-image: url("../img/spinner.svg") !important;
-  background-color: #fff;
+  /* background-image: url("../img/spinner.svg") !important; */
+  background-color: transparent;
   background-size: 100%;
   width: 50px !important;
   height: 50px;
