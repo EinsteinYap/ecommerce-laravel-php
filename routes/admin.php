@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\AdminController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\SliderController;
 
@@ -21,3 +22,7 @@ Route::resource('slider',SliderController::class);
 /** Category Route */
 Route::put('change-status',[CategoryController::class,'changeStatus'])->name('category.change-status'); // must create before resource route, else no work
 Route::resource('category',CategoryController::class);
+
+/** Sub Category Route */
+Route::put('subcategory/change-status',[SubCategoryController::class,'changeStatus'])->name('sub-category.change-status'); // must create before resource route, else no work
+Route::resource('sub-category',SubCategoryController::class);
